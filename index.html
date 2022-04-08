@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        179.4deg,
+        rgb(12, 20, 69) -16.9%,
+        rgb(71, 30, 84) 119.9%
+      );
+      margin: 8px;
+      display: block;
+    }
+    h1 {
+      text-align: center;
+      color: white;
+      background: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+      font-size: 75px;
+      font-family: "Harrington";
+      margin: 30px;
+      padding: 10px;
+      border-radius: 20px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 40px;
+      color: rgb(255, 255, 0);
+      font-family: "Curlz MT";
+    }
+    .first {
+      color: rgb(13, 170, 223);
+      background: rgb(51, 0, 99);
+      padding: 0px 10px 0px 12px;
+    }
+    .first:hover {
+      background: rgba(0, 0, 0, 0.219);
+      transition: all 150ms ease-in-out;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      padding: 5px 15px 30px 15px;
+      max-width: 100%;
+      border-radius: 20px;
+    }
+    p {
+      text-align: center;
+      font-size: 18px;
+      color: white;
+      font-family: "Lucida Sans";
+      border: rgb(133, 103, 172) solid;
+      border-width: 25px;
+      border-radius: 20px;
+      padding: 10px;
+      margin: 0 auto;
+      width: 55%;
+      line-height: 1.5;
+    }
+    .one {
+      font-size: 15px;
+      font-family: "Arial Narrow";
+      border: none;
+    }
+    .two {
+      color: rgb(13, 170, 223);
+      text-decoration: none;
+    }
+    .two:hover {
+      color: rgb(220, 79, 233);
+      transition: all 150ms ease-in-out;
+      text-decoration: underline;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      cursor: pointer;
+      border: 5px solid rgb(0, 15, 102);
+      font-family: "Harrington";
+      font-size: 20px;
+      background: rgb(133, 103, 172, 0.75);
+      color: rgb(222, 197, 255);
+      padding: 15px;
+      font-weight: bolder;
+      border-radius: 15px;
+      box-shadow: 0px 0px 10px white;
+    }
+    button:hover {
+      background: rgb(13, 170, 223);
+      color: #1a64d6;
+      border: 5px solid #1a64d6;
+      transition: all 150ms ease-in-out;
+    }
+    div {
+      color: white;
+      text-align: center;
+      font-family: "Lucida Sans";
+      padding: 10px;
+    }
+    .three {
+      font-family: "Lucida Handwriting";
+      color: white;
+      background: rgba(245, 0, 253, 0.25);
+      padding: 5px 10px 5px 10px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2px 30px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Coraline</h1>
+      <h2>🕯 <span class="first">Be careful what you wish for </span> 🕯</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/896/original/CORLNPK01_C_00027R.jpg?1634235798"
+        width="600px"
+        alt="coraline"
+      />
+      <p>
+        While exploring her new home, Coraline discovers a secret door, behind
+        which lies an alternate world that closely mirrors her own but, in many
+        ways, is better. She rejoices in her discovery, until
+        <em>Other Mother</em> and the rest of her parallel family try to keep
+        her there forever. Coraline must use all her resources and bravery to
+        make it back to her own family and life.
+      </p>
+      <p class="one">
+        Learn more
+        <a
+          class="two"
+          href="https://www.laika.com/our-films/coraline"
+          target="blank"
+          ><strong>here</strong></a
+        >! <br />
+      </p>
+      <button>Join the FanClub</button> <br />
+      <div>
+        Created by <span class="three"><strong>Sina A</strong></span>
+      </div>
+    </div>
+  </body>
+  <script>
+    function join() {
+      let name = prompt("What is your full name?");
+      let email = prompt("What is your email?");
+      alert("Thank you " + name + "! We will contact you soon.");
+    }
+    let contactButton = document.querySelector("button");
+    contactButton.addEventListener("click", join);
+  </script>
+</html>
